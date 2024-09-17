@@ -1,4 +1,2 @@
 # tmux
-nvim/tmux config
-
-git clone git@github.com:harleysad/tmux.git ~/.config
+git clone https://github.com/harleysad/tmux.git .config/tmux
