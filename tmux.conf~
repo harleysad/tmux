@@ -1,0 +1,33 @@
+set -g status on
+set -g status-interval 1
+set -g status-position bottom
+set -g base-index 1
+set -g pane-base-index 1
+
+set -g status-bg color0
+set -g status-fg white
+
+set-window-option -g window-status-style fg=white,bg=color17
+set-window-option -g window-status-current-style fg=color190,bg=color21
+set-window-option -g window-status-format "▌#I #W :#P/#(tmux list-panes -t #I | wc -l) "
+set-window-option -g window-status-current-format "▌#I #W :#P/#(tmux list-panes -t #I | wc -l) "
+
+set -g status-left "#[bg=color6,fg=color0]#h:#S "
+
+#cpu="#[bg=color17,fg=color18]#[bg=color18,fg=white] #(top -bn1 |  awk '/Cpu/ {print $2 + $4 }')%"
+
+
+format="#[bg=default,fg=color18]#[bg=color18,fg=white] #( free -h | awk '/Mem:/ {print  $4, \"/\", $2}')"
+cpu="#[bg=color18,fg=color19]#[bg=color19,fg=white] #(vmstat 1 2 | tail -1 | awk '{print 100 - $15 }')%"
+
+temp="#[bg=color19,fg=color20]#[bg=color20,fg=white] #(cat /sys/class/thermal/thermal_zone0/temp | awk '{ printf \"%.1f°C\", $1 /1000}')"
+time="#[bg=color20,fg=color21]#[bg=color21,fg=white] %H:%Mi"
+machine="#[bg=color21,fg=color6]#[bg=color6,fg=color52] #T"
+
+
+#   
+
+set -g status-right-length 500
+set -g status-right "$format $cpu $temp $time $machine "
+set -g status-left-length 50
+
