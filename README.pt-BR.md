@@ -22,7 +22,7 @@ Uma configuração do `tmux` de alta performance e esteticamente agradável, pro
 
 - `tmux.conf`: O arquivo principal de configuração do `tmux`.
 - `right.sh`: Script auxiliar para exibir as capacidades de cor do terminal.
-- `gemini.md`: Protocolo de "Vibe Coding" do projeto e regras de log de sessão.
+- `gemini.md`: Protocolo de "Vibe Coding" do projeto e regras de log de sessão. (Apelidado como `agents.md` e `claude.md`).
 
 ## Instalação
 

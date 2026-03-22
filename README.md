@@ -22,7 +22,7 @@ A high-performance, aesthetically pleasing `tmux` configuration designed for rea
 
 - `tmux.conf`: The core configuration file for `tmux`.
 - `right.sh`: Helper script to display terminal color capabilities.
-- `gemini.md`: Project's Vibe Coding Protocol and session logging rules.
+- `gemini.md`: Project's Vibe Coding Protocol and session logging rules. (Aliased as `agents.md` and `claude.md`).
 
 ## Installation
 
