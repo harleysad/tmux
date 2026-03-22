@@ -39,6 +39,11 @@ The `main` branch must serve as the "Source of Truth".
 2. Initialize the session log file immediately.
 3. Commit the code and the session log together or in sequence.
 
+## 5. Localization Protocol
+To ensure accessibility for Portuguese-speaking contributors:
+- **Requirement:** Every time `README.md` is updated, a corresponding update **must** be applied to `README.pt-BR.md`.
+- **Linking:** Both files must contain a visible link to each other at the top of the document.
+
 ## Related Documentation
 - [Agents](./agents.md)
 - [Code](./code.md)
