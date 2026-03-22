@@ -46,4 +46,4 @@ To ensure accessibility for Portuguese-speaking contributors:
 
 ## Related Documentation
 - [Agents](./agents.md)
-- [Claude](./claude
+- [Claude](./claude.md)
